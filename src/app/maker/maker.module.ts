@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MediaPageRoutingModule } from './media-routing.module';
+import { MakerPageRoutingModule } from './maker-routing.module';
 
-import { MediaPage } from './media.page';
+import { MakerPage } from './maker.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MediaPageRoutingModule
+    MakerPageRoutingModule
   ],
-  declarations: [MediaPage]
+  declarations: [MakerPage]
 })
-export class MediaPageModule {}
+export class MakerPageModule {}

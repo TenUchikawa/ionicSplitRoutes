@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { MediaPage } from './media.page';
+import { MakerPage } from './maker.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: MediaPage,
+    component: MakerPage,
     children: [
       {
         path: 'home',
@@ -14,15 +14,15 @@ const routes: Routes = [
           import('./home/home.module').then((m) => m.HomePageModule),
       },
       {
-        path: 'media-child-page-test',
+        path: 'maker-child-page-test',
         loadChildren: () =>
-          import('./media-child-page-test/media-child-page-test.module').then(
-            (m) => m.MediaChildPageTestPageModule
+          import('./maker-child-page-test/maker-child-page-test.module').then(
+            (m) => m.MakerChildPageTestPageModule
           ),
       },
       {
         path: '',
-        redirectTo: '/media/home',
+        redirectTo: '/maker/home',
         pathMatch: 'full',
       },
     ],
@@ -33,4 +33,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class MediaPageRoutingModule {}
+export class MakerPageRoutingModule {}

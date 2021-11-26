@@ -1,0 +1,31 @@
+<ion-split-pane contentId="media-content" [disabled]="!paneEnabled">
+  <ion-menu contentId="media-content" menuId="menu-media">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Media Page</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-menu-toggle auto-hide="false" menu="menu-media">
+          <ion-item
+            routerLink="/media/home"
+            routerDirection="root"
+            routerLinkActive="active-item"
+          >
+            <ion-label> Media Home </ion-label>
+          </ion-item>
+          <ion-item
+            routerLink="/media/media-child-page-test"
+            routerDirection="root"
+            routerLinkActive="active-item"
+          >
+            <ion-label> media child page test </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="media-content"></ion-router-outlet>
+</ion-split-pane>

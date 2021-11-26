@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MediaPageRoutingModule } from './media-routing.module';
+import { AdminPageRoutingModule } from './admin-routing.module';
 
-import { MediaPage } from './media.page';
+import { AdminPage } from './admin.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MediaPageRoutingModule
+    AdminPageRoutingModule
   ],
-  declarations: [MediaPage]
+  declarations: [AdminPage]
 })
-export class MediaPageModule {}
+export class AdminPageModule {}
